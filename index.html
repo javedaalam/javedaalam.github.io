@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javed Aalam | Data Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { --primary: #0078d4; --dark: #201f1e; --light: #f3f2f1; }
         body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--dark); background: #ffffff; scroll-behavior: smooth; }
         nav { position: fixed; width: 100%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 0; z-index: 1000; text-align: center; }
         nav a { margin: 0 15px; text-decoration: none; color: var(--dark); font-weight: 600; }
-        .hero { padding: 100px 20px 60px; background: var(--primary); color: white; text-align: center; }
+        .hero { padding: 120px 20px 80px; background: var(--primary); color: white; text-align: center; }
+        
+        /* New styles for profile image */
+        .profile-img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; /* Makes the image circular */
+            border: 5px solid white; /* Adds a white border */
+            object-fit: cover; /* Ensures the image doesn't stretch */
+            margin-bottom: 20px;
+        }
+
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
         section { padding: 60px 0; border-bottom: 1px solid #eee; }
         h2 { color: var(--primary); font-size: 2rem; margin-bottom: 20px; }
@@ -17,6 +29,18 @@
         .badge { background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 5px 2px; }
         .btn { display: inline-block; padding: 12px 25px; background: white; color: var(--primary); text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
         .footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+
+        /* Styles for social icons in contact section */
+        .social-icons a {
+            color: var(--primary);
+            font-size: 2rem;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: var(--dark);
+        }
     </style>
 </head>
 <body>
@@ -30,6 +54,7 @@
 </nav>
 
 <div class="hero">
+    <img src="profile.jpg" alt="Javed Aalam" class="profile-img">
     <h1>JAVED AALAM</h1>
     <p>Data Engineer | Azure Specialist | 3.4 Years Experience</p>
     <a href="mailto:javedaalam8052@gmail.com" class="btn">Hire Me</a>
@@ -58,4 +83,37 @@
         <h2>Key Projects</h2>
         <div class="card">
             <h3>Enterprise Data Platform (EDP)</h3>
-            <p>Developed a robust data engineering pipeline using **Azure Synapse Analytics** and **ADLS Gen2** to ensure data quality and
+            <p>Developed a robust data engineering pipeline using **Azure Synapse Analytics** and **ADLS Gen2** to ensure data quality and scalability.</p>
+        </div>
+        <div class="card">
+            <h3>Sales Data Migration</h3>
+            <p>Migrated on-prem SQL Server data to Azure Cloud. Built **Power BI** dashboards to track outlet performance and incentive distribution.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <span class="badge">DP-203: Azure Data Engineer</span>
+        <span class="badge">DP-700: Fabric Data Engineer</span>
+        <span class="badge">DP-600: Fabric Analytics Engineer</span>
+        <span class="badge">AI-900: Azure AI Fundamentals</span>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📍 Prayagraj, Uttar Pradesh</p>
+        <p>📧 <a href="mailto:javedaalam8052@gmail.com">javedaalam8052@gmail.com</a></p>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/javedaalam/" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/javedaalam8052" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 Javed Aalam. Built with GitHub Pages.</p>
+</div>
+
+</body>
+</html>
