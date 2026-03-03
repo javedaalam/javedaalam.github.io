@@ -6,145 +6,109 @@
     <title>Javed Aalam | Data Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { 
-            --primary: #0078d4; 
-            --dark: #201f1e; 
-            --light: #f3f2f1; 
-        }
-
-        body { 
-            font-family: 'Segoe UI', sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            color: var(--dark); 
-            background: #ffffff; 
-            scroll-behavior: smooth; 
-        }
-
-        /* Navigation */
-        nav { 
-            position: fixed; 
-            width: 100%; 
-            background: white; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-            padding: 15px 0; 
-            z-index: 1000; 
-            text-align: center; 
-        }
-
-        nav a { 
-            margin: 0 15px; 
-            text-decoration: none; 
-            color: var(--dark); 
-            font-weight: 600; 
-        }
-
-        /* Hero Section */
-        .hero { 
-            padding: 120px 20px 80px; 
-            background: var(--primary); 
-            color: white; 
-            text-align: center; 
-        }
+        :root { --primary: #0078d4; --dark: #201f1e; --light: #f3f2f1; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--dark); background: #ffffff; scroll-behavior: smooth; }
         
-        .profile-img { 
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-            border: 5px solid white; 
-            object-fit: cover; 
-            margin-bottom: 20px;
-        }
+        nav { position: fixed; width: 100%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 0; z-index: 1000; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--dark); font-weight: 600; }
 
-        .hero-social-icons {
-            margin-top: 35px;
-        }
+        .hero { padding: 120px 20px 80px; background: var(--primary); color: white; text-align: center; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 20px; }
+        
+        .hero-social-icons { margin-top: 35px; }
+        .hero-icon { color: white !important; font-size: 4rem; margin: 0 30px; text-decoration: none; transition: transform 0.3s ease; display: inline-block; }
+        .hero-icon:hover { transform: scale(1.2); }
 
-        .hero-icon {
-            color: white !important;
-            font-size: 4rem;
-            margin: 0 30px;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-            display: inline-block;
-        }
-
-        .hero-icon:hover {
-            transform: scale(1.2);
-            color: #f3f2f1 !important;
-        }
-
-        /* Content Sections */
-        .container { 
-            max-width: 900px; 
-            margin: auto; 
-            padding: 40px 20px; 
-        }
-
-        section { 
-            padding: 60px 0; 
-            border-bottom: 1px solid #eee; 
-        }
-
-        h2 { 
-            color: var(--primary); 
-            font-size: 2rem; 
-            margin-bottom: 20px; 
-        }
-
-        .card { 
-            background: var(--light); 
-            padding: 25px; 
-            border-radius: 8px; 
-            margin-bottom: 20px; 
-            border-left: 5px solid var(--primary); 
-        }
-
-        /* Professional Experience Project Styling */
-        .project-block {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-
-        .project-block h4 {
-            margin: 0 0 5px 0;
-            color: var(--dark);
-            font-size: 1.1rem;
-        }
-
-        .tools-text {
-            font-size: 0.85rem;
-            font-weight: bold;
-            color: #555;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .badge { 
-            background: var(--primary); 
-            color: white; 
-            padding: 5px 12px; 
-            border-radius: 20px; 
-            font-size: 0.85rem; 
-            display: inline-block; 
-            margin: 5px 2px; 
-        }
-
-        .footer { 
-            text-align: center; 
-            padding: 40px; 
-            background: var(--dark); 
-            color: white; 
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        h2 { color: var(--primary); font-size: 2rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); display: inline-block; }
+        
+        .card { background: var(--light); padding: 25px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid var(--primary); }
+        .project-block { margin-top: 25px; padding-top: 20px; border-top: 1px dotted #ccc; }
+        .project-block h4 { margin: 0 0 5px 0; text-transform: uppercase; color: var(--dark); }
+        .tools-text { font-size: 0.85rem; font-weight: bold; color: #555; display: block; margin-bottom: 10px; }
+        
+        .badge { background: var(--primary); color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 5px; }
+        .footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+        ul li { margin-bottom: 10px; line-height: 1.6; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#about
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <img src="profile.jpg" alt="Javed Aalam" class="profile-img">
+        <h1>JAVED AALAM</h1>
+        <p>Data Engineer | Azure Specialist | 3.6 Years Experience</p>
+        <div class="hero-social-icons">
+            <a href="https://www.linkedin.com/in/javedaalam/" target="_blank" class="hero-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/javedaalam" target="_blank" class="hero-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Growth-driven Data Engineer with 3.4 years of experience designing and optimizing scalable data pipelines using Azure Synapse, Data Factory, ADLS Gen2, and PySpark. Proven track record in implementing Medallion architecture, integrating diverse datasets, and driving enterprise-wide data governance through Microsoft Purview and MDM systems. Adept at automating workflows, enhancing data reliability, and delivering actionable insights via Power BI dashboards.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="card">
+                <h3>AZURE DATA ENGINEER | HEXAWARE TECHNOLOGIES</h3>
+                <p><em>(JUNE 2022 – PRESENT)</em></p>
+
+                <div class="project-block">
+                    <h4>ENTERPRISE DATA PLATFORM (EDP):</h4>
+                    <span class="tools-text">TOOLS USED: AZURE SYNAPSE, ADLS GEN2, PYSPARK, SQL, SSMS</span>
+                    <ul>
+                        <li>Developed a robust data engineering pipeline using Azure Synapse Analytics.</li>
+                        <li>Ensured data integrity, reliability, and efficient processing by employing the Medallion architecture.</li>
+                        <li>Utilized key technologies like ADLS Gen2, SSMS, Azure Data Factory, and PySpark for seamless data ingestion and transformation.</li>
+                        <li>Enabled final data consumption for analysis, guaranteeing data quality and governance.</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <h4>SALES DATA MIGRATION:</h4>
+                    <span class="tools-text">TOOLS USED: AZURE DATAFACTORY, PYSPARK, SQL, SSMS</span>
+                    <ul>
+                        <li>Migrated sales data from on-prem SQL Server to Azure ADLS Gen2 using ADF.</li>
+                        <li>Performed data transformations using PySpark notebooks to prepare data for visualization.</li>
+                        <li>Connected transformed data to Power BI to track outlet performance and incentive distribution.</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <h4>MASTER DATA MANAGEMENT:</h4>
+                    <span class="tools-text">TOOLS USED: PROFISEE, MICROSOFT PURVIEW, SQL</span>
+                    <ul>
+                        <li>Established an MDM system to maintain consistency and accuracy of core business data.</li>
+                        <li>Developed a data governance system connected to Microsoft Purview for managing multi-cloud data.</li>
+                        <li>Created a Python script to streamline the mapping process, minimizing manual tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="badge">DP-700: Fabric Data Engineer Associate</div>
+            <div class="badge">DP-600: Fabric Analytics Engineer Associate</div>
+            <div class="badge">DP-203: Azure Data Engineer Associate</div>
+            <div class="badge">AI-900: Azure AI Fundamentals</div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Javed Aalam. Built with GitHub Pages.</p>
+    </div>
+
+</body>
+</html>
