@@ -5,47 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javed Aalam | Data Engineer</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
-        header { background: #0078d4; color: white; padding: 2rem; text-align: center; border-radius: 8px; }
-        .section { background: white; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #0078d4; border-bottom: 2px solid #0078d4; padding-bottom: 5px; }
-        .badge { background: #e1f0ff; color: #0078d4; padding: 5px 10px; border-radius: 15px; font-size: 0.9em; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+        :root { --primary: #0078d4; --dark: #201f1e; --light: #f3f2f1; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--dark); background: #ffffff; scroll-behavior: smooth; }
+        nav { position: fixed; width: 100%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 0; z-index: 1000; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--dark); font-weight: 600; }
+        .hero { padding: 100px 20px 60px; background: var(--primary); color: white; text-align: center; }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        h2 { color: var(--primary); font-size: 2rem; margin-bottom: 20px; }
+        .card { background: var(--light); padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid var(--primary); }
+        .badge { background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 5px 2px; }
+        .btn { display: inline-block; padding: 12px 25px; background: white; color: var(--primary); text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        .footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Javed Aalam</h1>
-        <p>Data Engineer | 3.4 Years Experience | Azure Specialist</p>
-    </header>
 
-    <div class="section">
-        <h2>Professional Summary</h2>
-        <p>Growth-driven Data Engineer specializing in scalable data pipelines using Azure Synapse, Data Factory, and PySpark. Expert in implementing Medallion architecture and enterprise data governance.</p>
-    </div>
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <div class="section">
-        <h2>Technical Skills</h2>
-        <span class="badge">PySpark</span> <span class="badge">Python</span> <span class="badge">Azure Synapse</span> 
-        <span class="badge">Azure Data Factory</span> <span class="badge">Microsoft Fabric</span> <span class="badge">TSQL</span>
-        <span class="badge">Microsoft Purview</span> <span class="badge">Profisee MDM</span>
-    </div>
+<div class="hero">
+    <h1>JAVED AALAM</h1>
+    <p>Data Engineer | Azure Specialist | 3.4 Years Experience</p>
+    <a href="mailto:javedaalam8052@gmail.com" class="btn">Hire Me</a>
+</div>
 
-    <div class="section">
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Growth-driven Data Engineer with 3.4 years of experience designing and optimizing scalable data pipelines using **Azure Synapse, Data Factory, ADLS Gen2, and PySpark**. I specialize in implementing **Medallion architecture** and driving enterprise-wide data governance.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Azure Data Engineer | Hexaware Technologies</h3>
+            <p><em>June 2022 – Present</em></p>
+            <ul>
+                <li>Built Synapse pipelines using Medallion architecture (Bronze, Silver, Gold layers).</li>
+                <li>Automated workflows and enhanced data reliability using PySpark and SQL.</li>
+                <li>Managed MDM systems and Purview integration for data consistency.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
         <h2>Key Projects</h2>
-        <h3>Enterprise Data Platform (EDP)</h3>
-        <p>Built Synapse pipelines using Medallion architecture for seamless data ingestion and transformation using ADLS Gen2 and PySpark.</p>
-        
-        <h3>Master Data Management</h3>
-        <p>Established MDM systems using Profisee and Microsoft Purview to maintain consistency and accuracy of core business data.</p>
-    </div>
-
-    <div class="section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Fabric Data Engineer Associate (DP-700)</li>
-            <li>Azure Data Engineer Associate (DP-203)</li>
-            <li>Fabric Analytics Engineer Associate (DP-600)</li>
-        </ul>
-    </div>
-</body>
-</html>
+        <div class="card">
+            <h3>Enterprise Data Platform (EDP)</h3>
+            <p>Developed a robust data engineering pipeline using **Azure Synapse Analytics** and **ADLS Gen2** to ensure data quality and
